@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .error-container {
+            text-align: center;
+            margin-top: 10%;
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+
+        h1 {
+            color: #ff6666;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Error</h1>
+        <p>Sorry, an error occurred while processing your request.</p>
+        <p>Please <a href="index.html">return to the homepage</a> or try again later.</p>
+    </div>
+</body>
+</html>
