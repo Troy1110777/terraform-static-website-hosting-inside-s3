@@ -38,6 +38,6 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
 
-      # - name: Deploy to S3
-      #   run: |
-      #     aws s3 sync . s3://myterraformprojectwebsitehosting2023 --delete --acl public-read
+      - name: Deploy to S3
+        run: |
+          aws s3 sync . s3://myterraformprojectwebsitehosting2023 --delete --acl public-read
