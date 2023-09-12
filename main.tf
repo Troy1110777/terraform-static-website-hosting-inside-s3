@@ -8,7 +8,7 @@ resource "aws_s3_bucket_ownership_controls" "example" {
   
   rule {
     
-    object_ownership = "BucketOwnerEnforced"
+    object_ownership = "ObjectWriter"
   }
 }
 
